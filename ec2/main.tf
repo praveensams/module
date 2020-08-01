@@ -9,7 +9,7 @@ resource "aws_network_interface" "foo" {
 resource "aws_instance" "foo" {
   ami           = "ami-02354e95b39ca8dec" # us-west-2
   instance_type = "t2.micro"
-
+  key_pair = var.key_pair
   network_interface {
     network_interface_id = aws_network_interface.foo.id
     device_index         = 0
