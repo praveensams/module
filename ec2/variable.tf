@@ -2,6 +2,6 @@ variable subnet {
   type = string
   }
 
-variable key_pair {
+variable "key_pair" {
   type = string
   }
