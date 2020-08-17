@@ -5,3 +5,7 @@ variable subnet {
 variable keypair {
   type = string
   }
+
+variable security  {
+    type = list
+}
