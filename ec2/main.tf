@@ -14,5 +14,5 @@ resource "aws_instance" "foo" {
     network_interface_id = aws_network_interface.foo.id
     device_index         = 0
   }
-  security_groups = var.security
+  security_groups = [var.security]
 }

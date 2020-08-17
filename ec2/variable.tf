@@ -7,5 +7,5 @@ variable keypair {
   }
 
 variable security  {
-    type = list
+    type = string
 }
